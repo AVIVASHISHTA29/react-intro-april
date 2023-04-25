@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
 import "./index.css";
-import Hello from "./Hello.js";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
     <App />
-    <Hello />
   </div>
 );
 
