@@ -1,13 +1,22 @@
 import "./App.css";
-import Chat from "./Chat";
-// class Dog{
-// }
+import Card from "./Card";
 
 function App() {
   return (
-    <div className="hi">
-      <Chat />
-    </div>
+    <>
+      <Card
+        name={"Shri Ram"}
+        desc={"Shri Ram is a student at Acciojob in 2023 in F3"}
+      />
+      <Card
+        name={"Avi Vashishta"}
+        desc={"Avi is a student at Acciojob in 2023 in F3"}
+      />
+      <Card
+        name={"Rodriguez"}
+        desc={"Rodriguez is a student at Acciojob in 2023 in F3"}
+      />
+    </>
   );
 }
 
