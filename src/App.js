@@ -1,14 +1,12 @@
 import "./App.css";
-import Hello from "./Hello";
-
+import Chat from "./Chat";
 // class Dog{
 // }
 
 function App() {
   return (
     <div className="hi">
-      <h1>Hello World</h1>
-      <Hello />
+      <Chat />
     </div>
   );
 }
