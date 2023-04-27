@@ -4,6 +4,7 @@ import NewChat from "./components/NewChat";
 import dog from "./assets/dog.jpeg";
 import messages from "./messagesData";
 import CustomButton from "./components/CustomButton";
+import SimpleComponent from "./components/SimpleComponent";
 
 function App() {
   function onClick1() {
@@ -16,12 +17,13 @@ function App() {
 
   return (
     <>
-      <CustomButton myText={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
+      <SimpleComponent text="This is text" />
+      {/* <CustomButton myText={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
       <CustomButton
         myText={"Click Me 2"}
         onClickFnc={onClick2}
         myClass={"outlined-btn"}
-      />
+      /> */}
       {/* {messages.map((item) => {
         return (
           <NewChat name={item.sender} time={item.time} text={item.message} />
