@@ -1,9 +1,9 @@
 import "./styles.css";
 
-function CustomButton({ text, onClickFnc, myClass }) {
+function CustomButton({ myText, onClickFnc, myClass }) {
   return (
     <button onClick={onClickFnc} className={myClass}>
-      {text}
+      <h3>{myText}</h3>
     </button>
   );
 }

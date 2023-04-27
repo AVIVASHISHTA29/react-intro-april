@@ -15,10 +15,10 @@ function App() {
   }
 
   return (
-    <div id="hello">
-      <CustomButton text={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
+    <>
+      <CustomButton myText={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
       <CustomButton
-        text={"Click Me 2"}
+        myText={"Click Me 2"}
         onClickFnc={onClick2}
         myClass={"outlined-btn"}
       />
@@ -52,7 +52,7 @@ function App() {
         src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRPMKnq00NF_T7RusUNeLrSazRZM0S5O8_AOcw2iBTmYTxd3Q7uXf0sW41odpAKqSblKDMUMHGb8nZRo9g"
       />
       <img width="400" src={dog} /> */}
-    </div>
+    </>
   );
 }
 
