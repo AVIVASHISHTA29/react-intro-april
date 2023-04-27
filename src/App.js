@@ -2,13 +2,23 @@ import "./App.css";
 import Card from "./Card";
 import NewChat from "./NewChat";
 import dog from "./assets/dog.jpeg";
+import messages from "./messagesData";
 
 function App() {
   return (
     <>
-      <NewChat name="Alex" time="7:00PM" text="Hi How are you?" />
-      <NewChat name="Jane" time="9:00PM" text="I am Good" />
-      <NewChat name="Alex" time="10.00PM" text="Great..." />
+      {messages.map((item) => {
+        return (
+          <NewChat name={item.sender} time={item.time} text={item.message} />
+        );
+      })}
+      {/* {messages.map((item) => (
+        <NewChat name={item.sender} time={item.time} text={item.message} />
+      ))} */}
+
+      {/* {messages.map((item) => {})} you need to write return  */}
+      {/* {messages.map((item) => ())} no need to write return  */}
+
       {/* <Card
         name={"Shri Ram"}
         desc={"Shri Ram is a student at Acciojob in 2023 in F3"}
