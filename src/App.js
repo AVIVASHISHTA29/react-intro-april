@@ -1,17 +1,32 @@
 import "./App.css";
-import Card from "./Card";
-import NewChat from "./NewChat";
+import Card from "./components/Card/Card.js";
+import NewChat from "./components/NewChat";
 import dog from "./assets/dog.jpeg";
 import messages from "./messagesData";
+import CustomButton from "./components/CustomButton";
 
 function App() {
+  function onClick1() {
+    alert("1");
+  }
+
+  function onClick2() {
+    alert("2");
+  }
+
   return (
-    <>
-      {messages.map((item) => {
+    <div id="hello">
+      <CustomButton text={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
+      <CustomButton
+        text={"Click Me 2"}
+        onClickFnc={onClick2}
+        myClass={"outlined-btn"}
+      />
+      {/* {messages.map((item) => {
         return (
           <NewChat name={item.sender} time={item.time} text={item.message} />
         );
-      })}
+      })} */}
       {/* {messages.map((item) => (
         <NewChat name={item.sender} time={item.time} text={item.message} />
       ))} */}
@@ -37,7 +52,7 @@ function App() {
         src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRPMKnq00NF_T7RusUNeLrSazRZM0S5O8_AOcw2iBTmYTxd3Q7uXf0sW41odpAKqSblKDMUMHGb8nZRo9g"
       />
       <img width="400" src={dog} /> */}
-    </>
+    </div>
   );
 }
 

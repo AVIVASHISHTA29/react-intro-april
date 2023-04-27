@@ -1,4 +1,4 @@
-import "./NewChat.css";
+import "./styles.css";
 
 function NewChat({ name, time, text }) {
   return (
