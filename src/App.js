@@ -7,6 +7,7 @@ import CustomButton from "./components/CustomButton";
 import SimpleComponent from "./components/SimpleComponent";
 import Counter from "./components/Counter";
 import EmailState from "./components/EmailState";
+import FetchingData from "./components/FetchingData";
 
 function App() {
   function onClick1() {
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <>
-      <EmailState />
+      <FetchingData />
+      {/* <EmailState /> */}
       {/* <Counter /> */}
       {/* <SimpleComponent text="This is text" /> */}
       {/* <CustomButton myText={"Click Me"} onClickFnc={onClick1} myClass={"btn"} />
