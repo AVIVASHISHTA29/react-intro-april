@@ -8,6 +8,8 @@ import SimpleComponent from "./components/SimpleComponent";
 import Counter from "./components/Counter";
 import EmailState from "./components/EmailState";
 import FetchingData from "./components/FetchingData";
+import NewCard from "./components/NewCard";
+import ModuleStyleComponent from "./components/ModuleStyle";
 
 function App() {
   function onClick1() {
@@ -20,7 +22,10 @@ function App() {
 
   return (
     <>
-      <FetchingData />
+      <NewCard />
+      <ModuleStyleComponent />
+      <NewChat />
+      {/* <FetchingData /> */}
       {/* <EmailState /> */}
       {/* <Counter /> */}
       {/* <SimpleComponent text="This is text" /> */}
