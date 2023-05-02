@@ -10,6 +10,7 @@ import EmailState from "./components/EmailState";
 import FetchingData from "./components/FetchingData";
 import NewCard from "./components/NewCard";
 import ModuleStyleComponent from "./components/ModuleStyle";
+import LocalStorageComponent from "./components/LocalStorage";
 
 function App() {
   function onClick1() {
@@ -22,9 +23,10 @@ function App() {
 
   return (
     <>
-      <NewCard />
+      <LocalStorageComponent />
+      {/* <NewCard />
       <ModuleStyleComponent />
-      <NewChat />
+      <NewChat /> */}
       {/* <FetchingData /> */}
       {/* <EmailState /> */}
       {/* <Counter /> */}
